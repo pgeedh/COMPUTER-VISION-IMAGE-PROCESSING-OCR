@@ -10,15 +10,15 @@ Do NOT modify the code provided.
 Please follow the guidelines mentioned in the project1.pdf
 Do NOT import any library (function, module, etc.).
 """
-
-import argparse
-import json
-import os
+#Author:Pruthvi Omkar Geedh
 import glob
 import cv2
 import numpy as np
+import argparse
+import json
+import os
 
-
+#reading image into grayscale
 def read_image(img_path, show=False):
     """Reads an image into memory as a grayscale array.
     """
@@ -29,7 +29,7 @@ def read_image(img_path, show=False):
 
     return image
 
-
+#to show the image
 def show_image(image, delay=1000):
     """Shows an image.
     """
@@ -116,7 +116,7 @@ def enrollment(characters):
     return feature_enrolment
     # raise NotImplementedError
 
-
+#deteecting various characters in the test_img
 def detection(test_image):
     """
     Use connected component labeling to detect various characters in an test_img.
@@ -138,7 +138,7 @@ def detection(test_image):
 
     currchar_label_mat = np.full((test_image.shape[0], test_image.shape[1]), 0)
     current_label = 0
-
+#markers for the detection
     def label_marking(i, j):
 
         if (test_image[i][j] == 0):
@@ -203,7 +203,7 @@ def correlation_coefficient(arr1, arr2):
         p = p / s
         return p
 
-
+#character recognition
 def recognition(og_img, feature_enrolment, bbox):
     """
     Args:
@@ -253,7 +253,7 @@ def recognition(og_img, feature_enrolment, bbox):
     print(result)
     # raise NotImplementedError
 
-
+#saves result
 def save_results(coordinates, rs_directory):
     """
     Donot modify this code
