@@ -4,7 +4,6 @@
 Empire Innovation Professor
 Department of Computer Science and Engineering
 
-This repository contains the solutions from all the programming assignements and quiz in this Coursera Course.
 
 <h1>About This Course</h1>
 This course is an introduction to those areas of Artificial Intelligence that deal with fundamental issues and techniques of computer vision and image processing. The emphasis is on physical, mathematical, and information-processing aspects of the vision. Topics to be covered include image formation, edge detection and segmentation, convolution, image enhancement techniques, extraction of features such as color, texture, and shape, object detection, 3-D vision, and computer vision system architectures and applications.
